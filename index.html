@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kids0202</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kids0202</title>
 
-  <!-- g fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- g fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/4a5f50cc1d.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/4a5f50cc1d.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- css -->
-  <link rel="stylesheet" href="scss/main.css">
-</head>
-<body>
-  <div class="container">
-    <section class="section-1">
-      <h1 class="section-1-heading">
-        <!--  css 017, Getting a data attribute’s value in CSS -->
-        
-        <span data-letter='K'>K</span>
-        <span data-letter='i'>i</span>
-        <span data-letter='d'>d</span>
-        <span data-letter='s'>s</span>
-      </h1>
-    </section>
-  </div>
-  
-</body>
+    <!-- css -->
+    <link rel="stylesheet" href="scss/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="section-1">
+        <h1 class="section-1-heading">
+          <!--  css 017, 겹치는 글자 추가하기
+           Getting a data attribute’s value in CSS -->
+
+          <!-- html 025 글자간격 너무 벌어짐. 단순하게 span간의 간격을 모두 지우면 해결됨 -->
+          <!--  
+           <span data-letter="K">K</span>
+          <span data-letter="i">i</span>
+          <span data-letter="d">d</span>
+          <span data-letter="s">s</span> -->
+
+          <span data-letter="K">K</span><span data-letter="i">i</span
+          ><span data-letter="d">d</span><span data-letter="s">s</span>
+        </h1>
+      </section>
+    </div>
+  </body>
 </html>
