@@ -1,4 +1,4 @@
-// ⭐$color-cyan: #00ffff;
+// css 008, $color-cyan: #00ffff;
 $color-cyan: #00ffff;
 $color-orange: #ff9100;
 $color-red: #d64161;
@@ -20,7 +20,8 @@ $color-grey: #555;
   // https://gomakethings.com/how-to-access-and-use-data-attributes-in-your-css/
   //  data-letter안의  글자를 추가함
   content: attr(data-letter);
-  position: absolute; /* css 017 */
+
+  position: absolute; /* css 019 */
   left: 0;
 
   // css 024

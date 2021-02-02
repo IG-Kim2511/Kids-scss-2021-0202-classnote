@@ -7,8 +7,9 @@
     color: $color-white;
     font-weight: 600;
     opacity: 0.8;
-    position: relative; /* css 017 */
-    // css 023, inline속성에는 transform 적용안됨. span의 기본속성을 inline-block로 바꾸기
+    position: relative; /* css 019 */
+
+    //⭐css 023, inline속성에는 transform 적용안됨. span의 기본속성을 inline-block로 바꾸기
     display: inline-block;
 
     //  &::before~~~ , SASS pseudo-element 문법
