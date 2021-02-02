@@ -1,8 +1,33 @@
-*{
-    margin:0;
+
+// ⭐$color-cyan: #00ffff;
+$color-cyan: #00ffff;
+$color-orange: #ff9100;
+$color-red: #d64161;
+$color-green: #47bb60;
+$color-white: #fff;
+$color-dark: #333;
+$color-grey: #555;
+
+// flex
+@mixin flexLayout(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
     outline: none;
-}
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
+
+  }
+
+  html {
+      font-size: 62.5%;
+  }
