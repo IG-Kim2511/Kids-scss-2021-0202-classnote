@@ -3,4 +3,7 @@
     // rgba($color-dark,0.5)
     background: url(../images/bg.jpg) center no-repeat,linear-gradient(rgba($color-dark,0.4));
     background-size: cover;
+
+    // @include
+    @include flexLayout();
 }

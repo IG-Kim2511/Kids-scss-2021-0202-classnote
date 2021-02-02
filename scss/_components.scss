@@ -1,5 +1,18 @@
-.section-1-heading{
-    font-size: 30rem;
-    text-transform: uppercase;
-    letter-spacing: 6rem;
+.section-1-heading {
+  font-size: 30rem;
+  text-transform: uppercase;
+  letter-spacing: 6rem;
+
+  span {
+    color: $color-white;
+    font-weight: 600;
+    opacity: 0.8;
+
+    // SASS문법 for pseudo-element
+    &::before{
+
+        // css 018, @extend
+        @extend %before-after;
+    }
+  }
 }

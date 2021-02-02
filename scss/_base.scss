@@ -1,4 +1,3 @@
-
 // ⭐$color-cyan: #00ffff;
 $color-cyan: #00ffff;
 $color-orange: #ff9100;
@@ -9,25 +8,33 @@ $color-dark: #333;
 $color-grey: #555;
 
 // flex
-@mixin flexLayout(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@mixin flexLayout() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//  css 018, @extend
+%before-after {
+  // css 017, data attribute in CSS
+  // https://gomakethings.com/how-to-access-and-use-data-attributes-in-your-css/
+  content: attr(data-letter);
+  position: absolute;
+  left: 0;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    outline: none;
-    font-family: 'DM Mono', monospace;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+}
 
-  }
-
-  html {
-      font-size: 62.5%;
-  }
+html {
+  font-size: 62.5%;
+}

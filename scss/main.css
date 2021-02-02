@@ -1,3 +1,9 @@
+.section-1-heading span::before {
+  content: attr(data-letter);
+  position: absolute;
+  left: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +12,7 @@
   text-decoration: none;
   list-style-type: none;
   outline: none;
-  font-family: 'DM Mono', monospace;
+  font-family: "DM Mono", monospace;
   font-weight: 400;
 }
 
@@ -19,11 +25,26 @@ html {
   background: url(../images/bg.jpg) center no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.4)));
   background: url(../images/bg.jpg) center no-repeat, linear-gradient(rgba(51, 51, 51, 0.4));
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-1-heading {
   font-size: 30rem;
   text-transform: uppercase;
   letter-spacing: 6rem;
+}
+
+.section-1-heading span {
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */
