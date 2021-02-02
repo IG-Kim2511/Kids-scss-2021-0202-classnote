@@ -45,21 +45,44 @@
 
     // css 017 글자 밑에 line넣기
     // css 023
-    &:nth-child(odd){
-        transform: rotateZ(20deg);
-        border-bottom: 0.5rem solid $color-red;
+    &:nth-child(odd) {
+      transform: rotateZ(20deg);
+      border-bottom: 0.5rem solid $color-red;
     }
-    &:nth-child(even){
-        transform: rotateZ(-20deg);
-        border-bottom: 0.5rem solid $color-orange;
+    &:nth-child(even) {
+      transform: rotateZ(-20deg);
+      border-bottom: 0.5rem solid $color-orange;
     }
 
     // css 024
     &:hover:before {
-        transform: translate(-1rem,-1rem);
+      transform: translate(-1rem, -1rem);
     }
     &:hover:after {
-        transform: translate(1rem,1rem);
+      transform: translate(1rem, 1rem);
     }
+  }
+}
+
+.section-heading {
+  font-size: 9rem;
+  font-weight: 700;
+  color: $color-orange;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  margin: 5rem 0 10rem 0;
+}
+
+.card {
+  height: 40rem;
+  width: 30rem;
+  background-color: $color-orange;
+
+  @include flexLayout(space-around);
+  flex-direction: column;
+
+  //css 034, &-img: https://css-tricks.com/the-sass-ampersand/
+  &-img {
+    width: 25rem;
   }
 }

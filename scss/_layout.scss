@@ -1,9 +1,27 @@
-.section-1{
-    height: 100vh;
-    // css 008, rgba($color-dark,0.5)
-    background: url(../images/bg.jpg) center no-repeat,linear-gradient(rgba($color-dark,0.4));
-    background-size: cover;
+.section-1 {
+  height: 100vh;
+  // css 008, rgba($color-dark,0.5)
+  background: url(../images/bg.jpg) center no-repeat,
+    linear-gradient(rgba($color-dark, 0.4));
+  background-size: cover;
 
-    // @include
-    @include flexLayout();
+  // @include
+  @include flexLayout();
+}
+
+.section-2 {
+  height: 100vh;
+  background-color: $color-red;
+
+  @include flexLayout(space-between);   // css 031
+  flex-direction: column;
+
+  padding: 5rem 0 15rem 0;
+  
+}
+
+
+.cards-wrapper {
+  width: 100%;
+  @include flexLayout(space-evenly); // css 031 ($justify:center)
 }
