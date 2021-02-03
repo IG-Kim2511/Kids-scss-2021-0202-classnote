@@ -73,6 +73,8 @@
   margin: 5rem 0 10rem 0;
 }
 
+// section-2
+
 .card {
   height: 40rem;
   width: 30rem;
@@ -125,7 +127,7 @@
     width: 8rem;
     height: 8rem;
 
-    //   js~~~~~~~~~~~~~~~~~~~~~
+    // js 045 밑에 change로 뺌
     // width: 100%;
     // height: 100%;
 
@@ -138,13 +140,16 @@
     right: 0;
     border: 0.3rem solid $color-cyan;
 
+    // js 045
+    transition: all 0.5s 0.2s;
+
     &-content {
       width: 100%;
       height: 100%;
       @include flexLayout(space-evenly);
       flex-direction: column;
 
-      //   JS ~~~~~~~~~~~~~~~~~~~~
+      // js 045
       visibility: hidden;
       opacity: 0;
     }
@@ -167,4 +172,21 @@
       border: 0.2rem solid $color-cyan;
     }
   }
+}
+
+// js 045
+
+.change.card .circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: transparentize($color-white, 0.1);
+}
+
+// js 045
+
+.change .circle-content {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s 0.7s;
 }
