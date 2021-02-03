@@ -25,3 +25,16 @@
   width: 100%;
   @include flexLayout(space-evenly); // css 031 ($justify:center)
 }
+
+.section-3 {
+  @include flexLayout();
+  flex-direction: column;
+  background-color: $color-cyan;
+}
+
+.section-4 {
+  @include flexLayout();
+  flex-direction: column;
+  padding: 5rem 0;
+  background-color: $color-green;
+}
