@@ -80,9 +80,91 @@
 
   @include flexLayout(space-around);
   flex-direction: column;
+  box-shadow: 0.5rem 0.5rem 0 $color-white;
+  position: relative; //css 036
 
-  //css 034, &-img: https://css-tricks.com/the-sass-ampersand/
+  //css 034,  &-heading = card-heading , 상위 클래스이름 card 그대로 이어서 만든다는 뜻
+  // https://css-tricks.com/the-sass-ampersand/
+  &-heading {
+    font-size: 3rem;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+
+  //css 034
   &-img {
     width: 25rem;
+  }
+
+  &-btn {
+    @include flexLayout();
+    flex-direction: column;
+
+    //css 036
+    position: absolute;
+    left: -2.5rem;
+    padding: 1rem 0;
+    background-color: $color-white;
+    width: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    border: 2rem solid $color-orange;
+    border-right: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+
+    cursor: pointer;
+
+    span {
+      color: $color-red;
+    }
+  }
+
+  .circle {
+    width: 8rem;
+    height: 8rem;
+
+    //   js~~~~~~~~~~~~~~~~~~~~~
+    // width: 100%;
+    // height: 100%;
+
+    // css 039, transparentize( ~,  opacity) , 투명하게 하기
+    background-color: transparentize($color-white, 0.3);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0.3rem solid $color-cyan;
+
+    &-content {
+      width: 100%;
+      height: 100%;
+      @include flexLayout(space-evenly);
+      flex-direction: column;
+
+      //   JS ~~~~~~~~~~~~~~~~~~~~
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &-heading {
+      color: $color-red;
+      font-size: 1.8rem;
+    }
+
+    &-paragraph {
+      font-size: 1.8rem;
+      color: $color-grey;
+      padding: 2rem;
+    }
+    &-btn {
+      font-size: 1.4rem;
+      letter-spacing: 0.1rem;
+      padding: 0.5rem 1rem;
+      color: $color-red;
+      border: 0.2rem solid $color-cyan;
+    }
   }
 }
