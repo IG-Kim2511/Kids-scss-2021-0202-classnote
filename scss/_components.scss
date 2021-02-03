@@ -112,7 +112,7 @@
     text-transform: uppercase;
     font-weight: 700;
 
-    border: 2rem solid $color-orange;
+    border: 0.5rem solid $color-orange;
     border-right: none;
     border-radius: 0.5rem 0 0 0.5rem;
 
@@ -171,8 +171,17 @@
       color: $color-red;
       border: 0.2rem solid $color-cyan;
     }
-  }
 }
+
+.card-btn {
+      transition: all 0.2s ease-in;
+  }
+
+.card-btn:hover {
+border: 0.2rem solid $color-orange;
+transform: scale(1.1);
+}
+
 
 // js 045
 
@@ -189,4 +198,13 @@
   visibility: visible;
   opacity: 1;
   transition: all 0.5s 0.7s;
+}
+}
+
+// [section3]
+.advice{
+  width: 80%;
+  margin: 5rem 0;
+  font-size: 5rem;
+  color: $color-grey;
 }

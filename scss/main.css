@@ -27,8 +27,8 @@ html {
 
 .section-1 {
   height: 100vh;
-  background: url(../images/bg.jpg) center no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.4)));
-  background: url(../images/bg.jpg) center no-repeat, linear-gradient(rgba(51, 51, 51, 0.4));
+  background: url(../images/bg.jpg) center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(Q, rgba(51, 51, 51, 0.4)));
+  background: url(../images/bg.jpg) center no-repeat, linear-gradient(rgba(51, 51, 51, 0.4) Q);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +71,23 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.section-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #00ffff;
 }
 
 .section-1-heading {
@@ -199,7 +216,7 @@ html {
   width: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  border: 2rem solid #ff9100;
+  border: 0.5rem solid #ff9100;
   border-right: none;
   border-radius: 0.5rem 0 0 0.5rem;
   cursor: pointer;
@@ -261,17 +278,35 @@ html {
   border: 0.2rem solid #00ffff;
 }
 
-.change.card .circle {
+.card .card-btn {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.card .card-btn:hover {
+  border: 0.2rem solid #ff9100;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card .change.card .circle {
   width: 100%;
   height: 100%;
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.change .circle-content {
+.card .change .circle-content {
   visibility: visible;
   opacity: 1;
   -webkit-transition: all 0.5s 0.7s;
   transition: all 0.5s 0.7s;
+}
+
+.advice {
+  width: 80%;
+  margin: 5rem 0;
+  font-size: 5rem;
+  color: #555;
 }
 /*# sourceMappingURL=main.css.map */
